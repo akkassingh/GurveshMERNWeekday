@@ -1,2 +1,3 @@
 # GurveshMERNWeekday
-GurveshMERNWeekday
+
+MERN Stack Class.
