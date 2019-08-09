@@ -17,7 +17,7 @@ app.set('views', './src/views');
 //initialize data
 let final_menu = [{
         name: 'Home',
-        link: '/home'
+        link: '/'
     },
     {
         name: 'Prodcuct',
@@ -25,7 +25,7 @@ let final_menu = [{
     },
     {
         name: 'About us',
-        link: '/about'
+        link: '/'
     }
 ]
 
