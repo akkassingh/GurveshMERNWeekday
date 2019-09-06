@@ -1,0 +1,24 @@
+React
+==> it is a JS Library not a framework like Angular
+it creates SPA(Single page Application)
+
+MVC ==>
+Model
+View : React
+Controller
+
+Why to use react?
+use of component based structure
+
+Properties of React
+Data driven
+Uni-directional way(data flows in just one direction)
+
+node will be the one which will provide run time for the react Application
+
+in react we create JSX
+JavaScript and XML
+
+In React you don't have the acces to the Real DOM
+you have the access to the Virtual DOM
+react provides this virtual DOM which connects and talk to the Real DOM
