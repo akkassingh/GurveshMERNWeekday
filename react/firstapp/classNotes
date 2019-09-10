@@ -22,3 +22,24 @@ JavaScript and XML
 In React you don't have the acces to the Real DOM
 you have the access to the Virtual DOM
 react provides this virtual DOM which connects and talk to the Real DOM
+
+
+React we have the concept of State.
+In React, you have a single source of truth.(data).
+unidirectional.
+
+
+current State vs upcoming State
+
+Virtual DOM vs real DOM
+Only the required changes are then pushed to the real DOM.
+
+Types of components:
+1. Class based components
+2. functional components
+
+1. class based components are used when you want to manipulate the state. (you want to update the state.)
+2. functional components we are just using the state not manipulating it.
+In functional one can access the state data via props.
+
+
