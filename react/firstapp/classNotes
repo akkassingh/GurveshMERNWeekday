@@ -43,3 +43,13 @@ Types of components:
 In functional one can access the state data via props.
 
 
+
+
+<=== Constructor ===>>
+var object = {}
+var object = new Object {}
+var object = {
+    name: 'akkas',
+    sex : 'Male'
+}
+Constructor is part of the class
