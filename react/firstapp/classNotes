@@ -53,3 +53,18 @@ var object = {
     sex : 'Male'
 }
 Constructor is part of the class
+
+
+.map
+.filter
+var a = [0,1,2,3]
+a.map((data) => {return (data * 1)})
+a.filter((data) => {return (data * 1)})
+
+Filter will return values for which it is true.
+map return all the values with the logic.
+
+
+From child to Parent
+=> props
+from parent to child=> props with function

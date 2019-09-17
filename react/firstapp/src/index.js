@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Header from './component/header'
+import NewsList from './component/news_list';
 
 import data from './db.json'
 
@@ -10,16 +11,22 @@ class App extends Component {
         super()
         
         this.state = {
-            news: data
+            news: data,
+            filtered : data
         }
     }
+
+    filterNews(keyword){
+        let output =this.state.news.filter((item) => {
+            return item.title.toLowerCase().indexOf(keyword.toLowerCase()) > -1
+        })
+        this.setState({filtered:output})
+    }
     render(){
-        console.log('Data received >>>>',this.state.news)
         return(
             <div>
-            <Header />
-            <h1>Welcome to the News APP</h1>
-            <h2>This is current News</h2>
+            <Header userInput={(uinput) => this.filterNews(uinput)}/>
+            <NewsList newsdata={this.state.filtered}/>
             </div>
         )
     }
