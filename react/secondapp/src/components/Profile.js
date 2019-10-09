@@ -3,7 +3,13 @@ import React, {Component} from 'react';
 class Profile extends Component{
     render(){
         return(
-            <div>Profile Route</div>
+            <div>
+                    <div className="panel panel-danger">
+                    <div className="panel-heading">Profile page Heading</div>
+                    <div className="panel-body">Profile page content
+                    </div>
+                </div>
+            </div>
         )
     }
 }
