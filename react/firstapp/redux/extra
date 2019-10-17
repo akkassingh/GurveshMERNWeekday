@@ -1,0 +1,16 @@
+Redux have the following parts:
+View
+Action
+Reducer
+Store
+
+View => Action => Reducer => Store => View
+
+
+The single source of truth(application needs to have a central state)
+The state change triggers the view update.
+only the special functions can update the state.
+These functions are only triggered via any human interactions.
+Only one change takes place at a time.
+
+

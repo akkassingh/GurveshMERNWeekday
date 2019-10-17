@@ -1,0 +1,8 @@
+action return {
+    Type
+    payload
+}
+
+///////
+component => display
+container => connection to the redux
