@@ -3,9 +3,10 @@ import React from 'react';
 const Footer = () => {
     return(
         <footer>
-            <div>&copy; NareshIt</div>
-        </footer>  
+            <div>&copy; akkas</div>
+        </footer>
     )
 }
 
-export default Footer
+
+export default Footer;

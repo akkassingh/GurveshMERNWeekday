@@ -1,13 +1,13 @@
-import React from  'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const renderList = ({latestdata}) => {
-    if(latestdata){
-        return latestdata.map((item) => {
+const showLatest = ({latestnw}) => {
+    if(latestnw){
+        return latestnw.map((item) => {
             return(
-                <Link to="/" key={item.id}  className="item">
+                <Link key={item.id} to={`/details/${item.id}`} className="item">
                     <div className="image_cover"
-                        style={{background:`url(/images/articles/${item.img})`}}>
+                    style={{background:`url(/images/articles/${item.img})`}}>
                         <div className="description">
                             <span>{item.category}</span>
                             <div>{item.title}</div>
@@ -16,14 +16,13 @@ const renderList = ({latestdata}) => {
                 </Link>
             )
         })
-
     }
 }
 
 const LatestNews = (props) => {
     return(
         <div className="home-latest">
-            {renderList(props)}
+            {showLatest(props)}
         </div>
     )
 }
